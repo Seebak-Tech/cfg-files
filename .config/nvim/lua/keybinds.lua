@@ -16,13 +16,13 @@ keymap('n', '<leader>w', '<Cmd>w<cr>', opts)
 keymap('n', '<C-l>', ':<C-u>nohlsearch<CR><C-l>', { noremap = true, silent = true})
 
 -- Telescope
-keymap('n', '<leader>ff', '<Cmd>Telescope find_files<cr>', opts)
+keymap('n', '<leader>ff', '<Cmd>Telescope find_files hidden=true<cr>', opts)
 keymap('n', '<leader>fg', '<Cmd>Telescope live_grep<cr>', opts)
 keymap('n', '<leader>bl', '<Cmd>Telescope buffers<cr>', opts)
 keymap('n', '<leader>fh', '<Cmd>Telescope oldfiles<cr>', opts)
 keymap('n', '<leader>fb', ':Telescope file_browser<cr>', opts)
 keymap('n', '<leader>ft', ':Telescope treesitter<cr>', opts)
-keymap('n', '<leader>fp', ':Telescope project<cr>', opts)
+keymap('n', '<leader>fp', ":lua require'telescope'.extensions.project.project{ display_type = 'full' }<cr>", opts)
 keymap('n', '<leader>gws', ':Telescope git_worktree git_worktrees<CR>', opts)
 keymap('n', '<leader>gwc', ':Telescope git_worktree create_git_worktree<CR>', opts)
 

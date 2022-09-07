@@ -21,8 +21,9 @@ require("telescope").setup({
   extensions = {
     project = {
       base_dirs = {
-        '/workspace',
+        '/Users/emmanuel/workspace',
       },
+      hidden_files = true,
       theme = "dropdown",
     },
     file_browser = {
