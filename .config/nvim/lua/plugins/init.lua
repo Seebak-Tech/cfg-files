@@ -22,7 +22,7 @@ return require('packer').startup(function(use)
   -- Treesitter: Better Highlights --
   use({
       "nvim-treesitter/nvim-treesitter",
-      run = ":TSUpdate",
+      run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
       requires = {
         "nvim-treesitter/playground",
         "nvim-treesitter/nvim-treesitter-refactor",
