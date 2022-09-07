@@ -1,0 +1,6 @@
+require('plugins')
+require('settings')
+require('keybinds')
+require ('user.treesitter')
+require ('user.lsp')
+require('user.telescope-config')
