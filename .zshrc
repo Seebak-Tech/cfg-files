@@ -12,9 +12,6 @@ export TERM=tmux-256color
 #PYENV
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 
-#NEOVIM
-export PYTHON3_HOST_PROG=/home/admin/.pyenv/versions/neovim3/bin/python
-
 #LOCALE
 export LANG=en_US.UTF-8 
 export LANGUAGE=en_US:en 

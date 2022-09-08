@@ -7,6 +7,8 @@ local o = vim.o
 local wo = vim.wo
 local bo = vim.bo
 
+-- Python provider
+g.python3_host_prog = '/home/admin/.pyenv/versions/neovim3/bin/python'
 
 -- Set the color scheme
 o.termguicolors = true
