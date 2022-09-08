@@ -336,11 +336,15 @@ tmux_conf_copy_to_os_clipboard=true
 # -- user customizations -------------------------------------------------------
 # this is the place to override or undo settings
 
+# Configure terminal color settings
+set -g default-terminal "tmux-256color"
+set -ga terminal-overrides ",tmux-256color:Tc"
+
 # increase history size
 #set -g history-limit 10000
 
 # start with mouse mode enabled
-#set -g mouse on
+set -g mouse on
 
 # force Vi mode
 #   really you should export VISUAL or EDITOR environment variable, see manual

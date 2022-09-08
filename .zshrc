@@ -7,7 +7,7 @@ fi
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export TERM=xterm-256color
+export TERM=tmux-256color
 
 #PYENV
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
