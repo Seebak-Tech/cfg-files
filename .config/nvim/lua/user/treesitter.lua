@@ -6,7 +6,7 @@ end
 configs.setup({
 	ensure_installed = {
     "python", "typescript", "lua",
-	  "html", "css",
+	  "html", "css", "query",
 	  "javascript", "toml",
 	  "sql", "yaml", "json"
   }, -- one of "all" or a list of languages

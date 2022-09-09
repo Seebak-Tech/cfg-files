@@ -20,15 +20,26 @@ return require('packer').startup(function(use)
   use 'ellisonleao/gruvbox.nvim'
 
   -- Treesitter: Better Highlights --
-  use({
-      "nvim-treesitter/nvim-treesitter",
-      run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
-      requires = {
-        "nvim-treesitter/playground",
-        "nvim-treesitter/nvim-treesitter-refactor",
-        "nvim-treesitter/nvim-treesitter-textobjects",
-     },
-  })
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
+  }
+
+  use 'nvim-treesitter/nvim-treesitter-textobjects'
+
+  use {
+    'nvim-treesitter/nvim-treesitter-refactor',
+    requires = {
+      'nvim-treesitter/nvim-treesitter',
+    },
+  }
+
+  use {
+    'nvim-treesitter/playground',
+    requires = {
+      'nvim-treesitter/nvim-treesitter',
+    },
+  }
 
 	use {
 	  'VonHeikemen/lsp-zero.nvim',
