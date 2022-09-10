@@ -9,7 +9,7 @@ keymap('i', 'jk', '<esc>', opts)
 
 -- Guarda el archivo actual
 -- nnoremap <leader>w :w<cr>
-keymap('n', '<leader>w', '<Cmd>w<cr>', opts)
+keymap('n', '-w', '<Cmd>w<cr>', opts)
 
 -- Silencia la busqueda para evitar que se quede pintada la cadena buscada
 -- noremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
