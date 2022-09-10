@@ -7,7 +7,7 @@ configs.setup({
 	ensure_installed = {
     "python", "typescript", "lua",
 	  "html", "css", "query",
-	  "javascript", "toml",
+	  "javascript", "toml", "rust",
 	  "sql", "yaml", "json"
   }, -- one of "all" or a list of languages
 	ignore_install = { "" }, -- List of parsers to ignore installing
