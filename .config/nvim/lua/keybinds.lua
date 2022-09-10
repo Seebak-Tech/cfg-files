@@ -17,6 +17,7 @@ keymap('n', '<C-l>', ':<C-u>nohlsearch<CR><C-l>', { noremap = true, silent = tru
 
 -- Telescope
 keymap('n', '<leader>ff', '<Cmd>Telescope find_files<cr>', opts)
+keymap('n', '<leader>f.', '<Cmd>Telescope find_files hidden=true<cr>', opts)
 keymap('n', '<leader>fg', '<Cmd>Telescope live_grep<cr>', opts)
 keymap('n', '<leader>bl', '<Cmd>Telescope buffers<cr>', opts)
 keymap('n', '<leader>fh', '<Cmd>Telescope oldfiles<cr>', opts)
