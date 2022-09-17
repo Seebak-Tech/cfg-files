@@ -121,6 +121,9 @@ return require('packer').startup(function(use)
   -- Projectionist
   use{ "tpope/vim-projectionist" }
 
+  -- Adjusts shiftwidth and expandtab heuristically based on the current file
+  use{ "tpope/vim-sleuth" }
+
   -- Git Plugins
   use{"tpope/vim-fugitive"}
   use{"airblade/vim-gitgutter"}
@@ -133,10 +136,40 @@ return require('packer').startup(function(use)
     }
   }
 
+  -- Buffer line with tabpage integration
+  use {
+    'akinsho/bufferline.nvim',
+    tag = "v2.*",
+    requires = 'kyazdani42/nvim-web-devicons'
+  }
+
+  -- Statusline 
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
+
+  -- Smooth scrolling
+  use {'karb94/neoscroll.nvim'}
+
+  --Completition
+  use {'hrsh7th/cmp-nvim-lsp'}
+  use {'hrsh7th/cmp-buffer'}
+  use {'hrsh7th/cmp-path'}
+  use {'hrsh7th/cmp-cmdline'}
+  use {'hrsh7th/nvim-cmp'}
+
+  -- For luasnip users.
+  use {'L3MON4D3/LuaSnip'}
+  use {'saadparwaiz1/cmp_luasnip'}
+
+  -- Autopairs
+  use {"windwp/nvim-autopairs"}
+
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
     require('packer').sync()
   end
-
 end)
