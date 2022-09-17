@@ -166,6 +166,17 @@ return require('packer').startup(function(use)
   -- Autopairs
   use {"windwp/nvim-autopairs"}
 
+  -- Neotest
+  use {
+    "nvim-neotest/neotest",
+    requires = {
+      "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
+      "antoinemadec/FixCursorHold.nvim",
+      "nvim-neotest/neotest-python",
+      "rouge8/neotest-rust",
+    }
+  }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

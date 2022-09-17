@@ -4,10 +4,10 @@ local cmp = require('cmp')
 
 cmp.setup {
   sources = {
-    { name = 'nvim_lsp' },
+    { name = 'nvim_lsp', keyword_length = 5, max_item_count = 7 },
     { name = 'path' },
     { name = 'luasnip' },
-    { name = 'buffer', keyword_length = 5 },
+    { name = 'buffer', keyword_length = 5, max_item_count = 7 },
   },
   snippet = {
     expand = function(args)
