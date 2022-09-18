@@ -5,6 +5,8 @@ local slt_opts = { noremap = true, silent = true }
 
 -- inoremap <esc> <NOP>
 keymap('i', '<esc>', '<NOP>', opts)
+keymap('n','<C-k>', '<NOP>', opts)
+
 -- inoremap jk <esc>
 keymap('i', 'jk', '<esc>', opts)
 
