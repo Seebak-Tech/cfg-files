@@ -1,0 +1,19 @@
+#+TITLE: Seebak Dotfiles
+
+* Table of Contents :toc:
+- [[#what-are-dotfiles][What Are Dotfiles?]]
+- [[#how-to-manage-your-own-dotfiles][How To Manage Your Own Dotfiles]]
+- [[#license][License]]
+
+* What Are Dotfiles?
+
+Dotfiles are the customization files that are used to personalize your Linux or other Unix-based system.  You can tell that a file is a dotfile because the name of the file will begin with a period--a dot!  The period at the beginning of a filename or directory name indicates that it is a hidden file or directory.  This repository contains my personal dotfiles.  They are stored here for convenience so that I may quickly access them on new machines or new installs.  Also, others may find some of my configurations helpful in customizing their own dotfiles.
+
+* How To Manage Your Own Dotfiles
+There are a hundred ways to manage your dotfiles. Personally, I use the *git bare repository method* for managing my dotfiles. Here is an article about this method of managing your dotfiles: [[https://www.ccammack.com/posts/manage-your-configuration-files-using-git/][https://www.ccammack.com/posts/manage-your-configuration-files-using-git/]]
+
+Other articles discussing dotfile management are listed below:
+- [[https://www.digitalocean.com/community/tutorials/how-to-use-git-to-manage-your-user-configuration-files-on-a-linux-vps][How To Use Git to Manage your User Configuration Files on a Linux VPS]] (Justin Ellingwood)
+  
+* License
+The files and scripts in this repository are licensed under the MIT License, which is a very permissive license allowing you to use, modify, copy, distribute, sell, give away, etc. the software. In other words, do what you want with it. The only requirement with the MIT License is that the license and copyright notice must be provided with the software.
