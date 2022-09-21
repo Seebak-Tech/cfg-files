@@ -42,3 +42,6 @@ keymap('n', '<leader>ko', ":lua require('neotest').output.open({enter = true})<c
 keymap('n', '<leader>kc', ":lua require('neotest').summary.close()<cr>", slt_opts)
 keymap('n', '<leader>kl', ":lua require('neotest').run.run_last()<cr>", slt_opts)
 keymap('n', '<leader>ks', ":lua require('neotest').run.stop()<cr>", slt_opts)
+
+-- DirTree
+keymap('n', '<leader>tt', ":NvimTreeToggle<cr>", slt_opts)

@@ -16,6 +16,10 @@ vim.cmd([[colorscheme gruvbox]])
 g.mapleader = " "
 o.mouse = 'a'
 
+-- disable netrw for nvim-tree plugin
+g.loaded = 1
+g.loaded_netrwPlugin = 1
+
 -- Better editor UI
 o.number = true
 o.cursorline = true
