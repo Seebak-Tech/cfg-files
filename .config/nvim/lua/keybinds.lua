@@ -45,3 +45,15 @@ keymap('n', '<leader>ks', ":lua require('neotest').run.stop()<cr>", slt_opts)
 
 -- DirTree
 keymap('n', '<leader>tt', ":NvimTreeToggle<cr>", slt_opts)
+
+-- Go to Buffer
+keymap('n', '-1', '<Cmd>BufferLineGoToBuffer 1<CR>', opts)
+keymap('n', '-2', '<Cmd>BufferLineGoToBuffer 2<CR>', opts)
+keymap('n', '-3', '<Cmd>BufferLineGoToBuffer 3<CR>', opts)
+keymap('n', '-4', '<Cmd>BufferLineGoToBuffer 4<CR>', opts)
+keymap('n', '-5', '<Cmd>BufferLineGoToBuffer 5<CR>', opts)
+keymap('n', '-6', '<Cmd>BufferLineGoToBuffer 6<CR>', opts)
+keymap('n', '-7', '<Cmd>BufferLineGoToBuffer 7<CR>', opts)
+keymap('n', '-8', '<Cmd>BufferLineGoToBuffer 8<CR>', opts)
+keymap('n', '-9', '<Cmd>BufferLineGoToBuffer 9<CR>', opts)
+keymap('n', '-$', '<Cmd>BufferLineGoToBuffer -1<CR>', opts)
