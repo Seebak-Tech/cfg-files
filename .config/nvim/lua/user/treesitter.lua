@@ -5,20 +5,20 @@ end
 
 configs.setup({
 	ensure_installed = {
-    "python",
-    "typescript",
-    "lua",
-	  "html",
-    "css",
-    "query",
-	  "javascript",
-    "toml",
-    "rust",
-	  "sql",
-    "yaml",
-    "json",
-    "regex"
-  }, -- one of "all" or a list of languages
+		"python",
+		"typescript",
+		"lua",
+		"html",
+		"css",
+		"query",
+		"javascript",
+		"toml",
+		"rust",
+		"sql",
+		"yaml",
+		"json",
+		"regex",
+	}, -- one of "all" or a list of languages
 	ignore_install = { "" }, -- List of parsers to ignore installing
 	highlight = {
 		enable = true, -- false will disable the whole extension

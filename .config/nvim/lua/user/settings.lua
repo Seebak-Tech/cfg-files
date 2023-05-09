@@ -35,7 +35,7 @@ vim.cmd([[
   augroup END
   ]]
 )
-o.colorcolumn = '80' -- Line lenght marker at 80 columns
+o.colorcolumn = '88' -- Line lenght marker at 88 columns
 o.tabstop = 2
 o.shiftwidth = 2
 o.softtabstop = 2
