@@ -14,7 +14,7 @@ vim.cmd([[colorscheme gruvbox]])
 
 -- Config map leader
 g.mapleader = " "
-o.mouse = 'a'
+o.mouse = "a"
 
 -- disable netrw for nvim-tree plugin
 g.loaded = 1
@@ -33,16 +33,15 @@ vim.cmd([[
   autocmd!
   au TextYankPost * silent! lua vim.highlight.on_yank({higroup="IncSearch", timeout=700})
   augroup END
-  ]]
-)
-o.colorcolumn = '88' -- Line lenght marker at 88 columns
+  ]])
+o.colorcolumn = "88" -- Line lenght marker at 88 columns
 o.tabstop = 2
 o.shiftwidth = 2
 o.softtabstop = 2
 o.expandtab = true
 
 o.cursorline = true
-o.signcolumn = 'yes'
+o.signcolumn = "yes"
 o.sidescrolloff = 4
 o.hlsearch = true
 o.incsearch = true
@@ -51,7 +50,6 @@ o.splitright = true
 o.undofile = true
 g.neovide_transparency = 0.9
 
-
-o.foldmethod = 'expr'
-o.foldexpr = 'nvim_treesitter#foldexpr()'
+o.foldmethod = "expr"
+o.foldexpr = "nvim_treesitter#foldexpr()"
 wo.foldminlines = 2
