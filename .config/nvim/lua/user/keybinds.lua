@@ -15,7 +15,7 @@ keymap("i", "jk", "<esc>", opts)
 keymap("n", "-w", "<Cmd>w<cr>", opts)
 
 -- Formating Code
-keymap("n", "-f", ":Format<cr>", opts)
+keymap("n", "-f", ":Format<cr>", slt_opts)
 
 -- Silencia la busqueda para evitar que se quede pintada la cadena buscada
 -- noremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
