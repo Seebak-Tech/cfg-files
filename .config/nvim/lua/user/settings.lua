@@ -10,7 +10,7 @@ local bo = vim.bo
 -- Set the color scheme
 o.termguicolors = true
 o.background = "dark" -- or "light" for light mode
-vim.cmd([[colorscheme gruvbox]])
+-- vim.cmd([[colorscheme gruvbox]])
 
 -- Config map leader
 g.mapleader = " "
@@ -48,8 +48,8 @@ o.incsearch = true
 o.splitbelow = true
 o.splitright = true
 o.undofile = true
-g.neovide_transparency = 0.9
+-- g.neovide_transparency = 0.9
 
-o.foldmethod = "expr"
-o.foldexpr = "nvim_treesitter#foldexpr()"
-wo.foldminlines = 2
+-- o.foldmethod = "expr"
+-- o.foldexpr = "nvim_treesitter#foldexpr()"
+-- wo.foldminlines = 2
